@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+
+# PROVIDE: ipnotfd
+# REQUIRE: DAEMON
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+
+name=ipnotfd
+rcvar=ipnotfd_enable
+
+load_rc_config $name
+
+: ${ipnotfd_enable="NO"}
+: ${ipnotfd_pidfile="/var/run/${name}.pid"}
+
+command="%%PREFIX%%/sbin/${name}"
+pidfile="${ipnotfd_pidfile}"
+
+run_rc_command $*
