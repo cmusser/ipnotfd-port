@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	ipnotfd
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	net-mgmt
 USE_GITHUB=	yes
 GH_ACCOUNT=	cmusser

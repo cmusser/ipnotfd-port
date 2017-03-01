@@ -2,7 +2,7 @@
 #
 
 # PROVIDE: ipnotfd
-# REQUIRE: DAEMON
+# REQUIRE: NETWORKING
 # KEYWORD: shutdown
 
 . /etc/rc.subr
